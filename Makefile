@@ -37,3 +37,9 @@ format:
 	# find fuzz_test -regex '.*\.\(cmake\)' -exec cmake-format -c .cmake-format.yaml -i {} \;
 	# find configured_files -regex '.*\.\(cmake\)' -exec cmake-format -c .cmake-format.yaml -i {} \;
 	# cmake-format -c .cmake-format.yaml -i CMakeLists.txt
+
+clean:
+	rm -rf build/debug
+
+clean-release:
+	rm -rf build/release

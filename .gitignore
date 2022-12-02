@@ -71,3 +71,4 @@ GTAGS
 .cache/
 .ccls-cache/
 .cland/
+compile_commands.json

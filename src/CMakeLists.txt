@@ -15,3 +15,6 @@ target_link_system_libraries(
 
 
 target_include_directories(intro PRIVATE "${CMAKE_BINARY_DIR}/configured_files/include")
+
+
+add_library(adder adder.cpp)

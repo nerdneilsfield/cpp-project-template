@@ -106,3 +106,11 @@ target_compile_definitions(relaxed_constexpr_tests PRIVATE -DCATCH_CONFIG_RUNTIM
 #   .json)
 catch_discover_tests(relaxed_constexpr_tests)
 
+
+add_executable(test_adder test_adder.cpp)
+target_link_libraries(test_adder PRIVATE  catch_main adder)
+message(STATUS ${Catch2_SOURCE_DIR})
+target_include_directories(test_adder PUBLIC ${Catch2_SOURCE_DIR}/src)
+catch_discover_tests(test_adder)
+
+
